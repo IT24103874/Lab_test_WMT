@@ -27,6 +27,11 @@ const itemSchema = new mongoose.Schema(
       default: "",
       trim: true,
     },
+    quantity: {
+        type: Number,
+        required: [true, "Quantity is required"],
+        min: [0, "Quantity cannot be negative"]
+    }
   },
   { timestamps: true }
 );
