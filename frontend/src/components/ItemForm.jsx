@@ -63,7 +63,7 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
             value={formData.quantity}
             onChange={handleChange}
             required
-            >
+            />
 
       <button className="btn primary" type="submit">{submitText}</button>
     </form>
